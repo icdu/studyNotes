@@ -11,3 +11,9 @@
     AppClassLoader:用来载入当前应用工程的classes以及lib下的类库，仅仅申明并不会载入，等时才会
     ExtClassLoader:用来载入ext下的类库(也是预先载入好的)
     BootStrapClassLoader:用来预先载入jre下的类库(这些类都是预先载入好的)
+
+二.基本数据类型
+  数值型、字符型和布尔型：(byte,short,int,long),(float,double),char,boolean
+  JAVA的数据类型转换
+  i++
+   
