@@ -1,1 +1,1 @@
-**There are lots of study notes.**
+**This is the study note.**
