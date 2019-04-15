@@ -45,9 +45,13 @@
       基本数据结构：
       自动转型和强制转型：
       封箱和拆箱：
-    2.常用集合：掌握集合类如何实现
-      HashMap：
-      ConcurrentHashMap：
+    2.常用集合：掌握集合类如何实现()
+      HashMap：数组加链表的实现方式、容量大小是2的幂次方的原因(https://blog.csdn.net/wanghuan220323/article/details/78242449)、并发读写会有什么风险
+        --Map的实现能够考察到数据结构，Java基础实现，以及对并发问题处理思路的掌握程度
+        Java的HashMap就是数组加链表实现的，数组中的每一项是一个链表，通过计算存入对象的HashCode来计算对象在数组中要存入的位置，用链表来解决散列冲突，
+        链表中的节点存储的是键值对。除了实现的方式，我们还要知道填充因子的作用，与扩容是的rehash机制，需要知道map容量大小是2的幂次方的原因，可通过
+        按位与操作来计算余数
+      ConcurrentHashMap：并发控制与分段锁思想、1.8中的CAS自旋锁
       ArrayList&&LinedList：
       HashSet：
       HashTree：
