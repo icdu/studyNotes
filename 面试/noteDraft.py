@@ -5,7 +5,7 @@
     3.线程切换的步骤：线程上下文切换，以及线程切换的代价(增加资源消耗https://www.cnblogs.com/binyue/p/4484783.html)
     *4.中间件相关：进程间通信IPC
   Linux常用命令：线上问题排查
-    awk、top、netstat、grep、less、tail
+    awk、top、netstat、grep、less、tail(https://www.cnblogs.com/ginvip/p/6352157.html)
   拓展知识点：
     内存屏障、指令乱码、分支预测、CPU亲和性(affinity)、Netfilter与iptables
   网络知识：
