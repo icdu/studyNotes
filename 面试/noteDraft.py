@@ -45,26 +45,26 @@
       基本数据结构：
       自动转型和强制转型：
       封箱和拆箱：
-    2.常用集合：
+    2.常用集合：掌握集合类如何实现
       HashMap：
       ConcurrentHashMap：
       ArrayList&&LinedList：
       HashSet：
       HashTree：
-    3.JUC：
+    3.JUC：(多线程)
       ConcurrentXXX：
       AtomicXXX：
       Executor：
       Caller&&Future：
       Queue：
       Loacks：
-    4.对象引用：
-      强引用：
-      弱引用：
-      软引用：
-      虚引用：
-    5.动态代理与反射：
-    6.异常机制：
+    4.对象引用：这些引用在JC的处理策略不同
+      强引用：不会被JC回收
+      弱引用：每次JC时都会被回收
+      软引用：内存空间不足时会被JC回收
+      虚引用：必须和引用队列联合使用，主要用于跟踪一个对象被垃圾回收的过程
+    5.动态代理与反射：掌握使用场景，ORM框架中大量使用代理类，RPC调用时会使用反射机制，调用实现类的方法；
+    6.异常机制：try catch finally机制，需要知道error和Exception的区别 
     7.版本差异新特性：
     8.拓展知识点：
       SPI机制：
