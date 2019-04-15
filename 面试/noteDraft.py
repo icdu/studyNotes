@@ -39,3 +39,34 @@
     适配器模式：SLF4如何支持Log4J
     观察者模式：GRPC是如何支持流式请求的
     其他模式：
+  2）java语言特性
+    1.数据类型：
+      空间占用：
+      基本数据结构：
+      自动转型和强制转型：
+      封箱和拆箱：
+    2.常用集合：
+      HashMap：
+      ConcurrentHashMap：
+      ArrayList&&LinedList：
+      HashSet：
+      HashTree：
+    3.JUC：
+      ConcurrentXXX：
+      AtomicXXX：
+      Executor：
+      Caller&&Future：
+      Queue：
+      Loacks：
+    4.对象引用：
+      强引用：
+      弱引用：
+      软引用：
+      虚引用：
+    5.动态代理与反射：
+    6.异常机制：
+    7.版本差异新特性：
+    8.拓展知识点：
+      SPI机制：
+      注解处理机制
+    
