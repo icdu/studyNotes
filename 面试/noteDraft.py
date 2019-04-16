@@ -72,10 +72,10 @@
       Queue：
       Loacks：
     d.对象引用：(https://www.cnblogs.com/dolphin0520/p/3592498.html)这些引用在JC的处理策略不同
-      强引用：不会被JC回收    强应用使用不当有可能造成内存泄漏
+      强引用：不会被JC回收    强应用使用不当有可能造成内存泄漏(https://cloud.tencent.com/developer/article/1362804)
       弱引用：每次JC时都会被回收
       软引用：内存空间不足时会被JC回收
-      虚引用：必须和引用队列联合使用，主要用于跟踪一个对象被垃圾回收的过程
+      虚引用：必须和引用队列ReferenceQueue联合使用，主要用于跟踪一个对象被垃圾回收的过程
     e.动态代理与反射：掌握使用场景，ORM框架中大量使用代理类，RPC调用时会使用反射机制，调用实现类的方法；   大量使用会造成性能影响
     f.异常机制：try catch finally机制，需要知道error和Exception的区别 
     g.版本差异新特性：
