@@ -105,7 +105,7 @@
   4.常用工具类(JUC)：
   5.机制：
     ThreadLocal:用来保存线程独享的数据(https://www.jianshu.com/p/98b68c97df9b)(https://www.cnblogs.com/dolphin0520/p/3920407.html)
-      (https://blog.csdn.net/yezis/article/details/57513130)
+      (https://blog.csdn.net/yezis/article/details/57513130)(https://www.jianshu.com/p/964fbc30151a)
     Fork/Join:
     Volatile:
     Interrupt:
