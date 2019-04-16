@@ -75,7 +75,7 @@
       (https://blog.csdn.net/sinat_21118695/article/details/82392028)
       强引用：不会被JC回收    强应用使用不当有可能造成内存泄漏(https://cloud.tencent.com/developer/article/1362804)
       软引用：内存空间不足时会被JC回收(https://www.cnblogs.com/dolphin0520/p/3784171.html)
-      弱引用：每次JC时都会被回收(https://blog.csdn.net/onlyoncelove/article/details/81150502)(http://www.importnew.com/21206.html)
+      弱引用：每次JC时都会被回收(https://www.jianshu.com/p/dde92ec37bd1)(http://www.importnew.com/21206.html)
       虚引用：必须和引用队列ReferenceQueue联合使用，主要用于跟踪一个对象被垃圾回收的过程
     e.动态代理与反射：掌握使用场景，ORM框架中大量使用代理类，RPC调用时会使用反射机制，调用实现类的方法；   大量使用会造成性能影响
     f.异常机制：try catch finally机制，需要知道error和Exception的区别 
