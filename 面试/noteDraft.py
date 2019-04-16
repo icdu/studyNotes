@@ -72,7 +72,7 @@
       Queue：
       Loacks：
     d.对象引用：(https://www.cnblogs.com/dolphin0520/p/3592498.html)这些引用在JC的处理策略不同
-      (https://blog.csdn.net/sinat_21118695/article/details/82392028)(http://www.cnblogs.com/fengbs/p/7019687.html)
+      (https://blog.csdn.net/sinat_21118695/article/details/82392028)
       强引用：不会被JC回收    强应用使用不当有可能造成内存泄漏(https://cloud.tencent.com/developer/article/1362804)
       软引用：内存空间不足时会被JC回收(https://www.cnblogs.com/dolphin0520/p/3784171.html)
       弱引用：每次JC时都会被回收(https://blog.csdn.net/onlyoncelove/article/details/81150502)(http://www.importnew.com/21206.html)
