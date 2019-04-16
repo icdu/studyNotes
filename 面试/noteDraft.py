@@ -71,7 +71,7 @@
       Caller&&Future：
       Queue：
       Loacks：
-    d.对象引用：这些引用在JC的处理策略不同
+    d.对象引用：(https://www.cnblogs.com/dolphin0520/p/3592498.html)这些引用在JC的处理策略不同
       强引用：不会被JC回收    强应用使用不当有可能造成内存泄漏
       弱引用：每次JC时都会被回收
       软引用：内存空间不足时会被JC回收
