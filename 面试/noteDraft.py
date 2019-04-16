@@ -89,9 +89,10 @@
   
 四、并发与多线程
   1.死锁：
-    竞争条件与临界区(https://blog.csdn.net/shfqbluestone/article/details/46059879)
-  
-  
+    竞争条件与临界区(https://blog.csdn.net/shfqbluestone/article/details/46059879)(https://blog.csdn.net/u010715440/article/details/79503472)
+  两个线程访问同一个资源而且与线程访问资源时的顺序有关的这样一种情形就叫竞争条件。 导致竞争条件发生的代码片段就叫临界区。在前面的例子中， 
+  add() 方法导致了竞争条件的发生，它就是临界区。在临界区中可以通过恰当的线程同步来消除竞争条件。
+    
   2.线程通信：
   3.线程状态转化：new、runnanle、bloacked、time_waiting、waiting、terminated
   4.常用工具类(JUC)：
