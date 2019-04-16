@@ -89,6 +89,9 @@
   
 四、并发与多线程
   1.死锁：
+    竞争条件与临界区(https://blog.csdn.net/shfqbluestone/article/details/46059879)
+  
+  
   2.线程通信：
   3.线程状态转化：new、runnanle、bloacked、time_waiting、waiting、terminated
   4.常用工具类(JUC)：
