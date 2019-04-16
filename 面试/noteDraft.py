@@ -88,10 +88,11 @@
   
   
 四、并发与多线程
-  1.死锁
-  2.线程通信
-  3.线程状态转化
-  4.常用工具类(JUC)
-  5.机制
-  6.同步与互斥
-  7.线程池
+  1.死锁：
+  2.线程通信：
+  3.线程状态转化：new、runnanle、bloacked、time_waiting、waiting、terminated
+  4.常用工具类(JUC)：
+  5.机制：
+  6.同步与互斥：
+  7.线程池：
+  CAS(https://blog.csdn.net/mmoren/article/details/79185862)
