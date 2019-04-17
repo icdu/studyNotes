@@ -94,6 +94,7 @@
   
   
 四、并发与多线程
+  线程实现：实现Runnable接口、实现Callable接口(返回值通过FutureTask进行封装)、继承Thread类
   1.死锁：
     竞争条件与临界区(https://blog.csdn.net/shfqbluestone/article/details/46059879)(https://blog.csdn.net/u010715440/article/details/79503472)
   两个线程访问同一个资源而且与线程访问资源时的顺序有关的这样一种情形就叫竞争条件。(当两个线程访问同一资源时，如果对资源的访问顺序敏感，就称存在竞争条件) 
@@ -120,7 +121,7 @@
     解决同步与互斥方法： 
       a.CAS(https://blog.csdn.net/mmoren/article/details/79185862)
       b.Synchronized
-      c.Lock reetrentlock
+      c.Lock reetrantlock
   
   7.线程池：
   
