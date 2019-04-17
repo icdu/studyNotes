@@ -117,5 +117,10 @@
 　　  3）如果是写操作，它会导致其他CPU中对应的缓存行无效。
     Interrupt:(https://www.cnblogs.com/skywang12345/p/3479949.html)
   6.同步与互斥：
+    同步： 
+      a.CAS(https://blog.csdn.net/mmoren/article/details/79185862)
+      b.synchronized
+      c.lock reetrentlock
+  
   7.线程池：
-  CAS(https://blog.csdn.net/mmoren/article/details/79185862) 
+  
