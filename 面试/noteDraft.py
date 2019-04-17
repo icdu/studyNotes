@@ -145,3 +145,5 @@
     e.newWorkStealingPool:使用ForkJoinPool，多任务队列的固定并行度，适合任务执行时长不均匀的场景
     THreadPoolExecutor(int corePoolSize,int maximumPoolSize,long keepAliveTime,TimeUnit unit,
                       BlockingQueue<Runnable> workQueue,ThreadFactory threadFactory,RejectedExecutorHandler handler)
+                       
+   8.CopyOnWrite容器：https://www.cnblogs.com/dolphin0520/p/3938914.html
