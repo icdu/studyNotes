@@ -115,7 +115,7 @@
         在它前面的操作已经全部完成；
 　　  2）它会强制将对缓存的修改操作立即写入主存；
 　　  3）如果是写操作，它会导致其他CPU中对应的缓存行无效。
-    d.Interrupt:(https://www.cnblogs.com/skywang12345/p/3479949.html)
+    d.Interrupt:(https://www.cnblogs.com/skywang12345/p/3479949.html)isInterrupted()、设置变量
   6.同步与互斥：
     解决同步与互斥方法： 
       a.CAS(https://blog.csdn.net/mmoren/article/details/79185862)
