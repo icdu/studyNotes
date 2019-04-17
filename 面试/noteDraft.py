@@ -119,7 +119,7 @@
     d.Interrupt:(https://www.cnblogs.com/skywang12345/p/3479949.html)isInterrupted()、添加标记
   6.同步与互斥：
     解决同步与互斥方法： 
-      a.CAS CompareAndSwap即比较交换(https://blog.csdn.net/mmoren/article/details/79185862)
+      a.CAS CompareAndSwap即比较交换(https://blog.csdn.net/mmoren/article/details/79185862) AtomicStampedReference原子类是一个带有时间戳的对象引用
       b.Synchronized
       c.Lock reetrantlock
   
