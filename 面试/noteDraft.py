@@ -102,7 +102,7 @@
     产生条件：互斥、请求并持有、非剥夺、循环等待
     
   2.线程通信：主要指线程之间的协作机制，比如wait、notify、notifyAll
-  3.线程状态转化：new、runnanle、bloacked、time_waiting、waiting、terminated
+  3.线程状态转化：new、runnanle、bloacked、time_waiting、waiting、terminated(https://blog.csdn.net/qq_41665476/article/details/80225592)
   4.常用工具类(JUC)：
   5.机制：java为多线程提供的机制
     ThreadLocal:用来保存线程独享的数据(https://www.jianshu.com/p/98b68c97df9b)(https://www.cnblogs.com/dolphin0520/p/3920407.html)
