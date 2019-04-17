@@ -132,5 +132,9 @@
            (5) Lock可以提高多个线程进行读操作的效率。
            在性能上来说，如果竞争资源不激烈，两者的性能是差不多的。而当竞争资源非常激烈时（即有大量线程同时竞争），
            此时Lock的性能要远远优于synchronized。所以说，在具体使用时要根据适当情况选择。
-  7.线程池：
-  
+  7.线程池：Executors
+    a.newFixedThreadPool:固定线程数，无界序列，适用于任务数量不均匀的场景、对内存压力不敏感，但系统负载比较敏感的场景
+    b.newCacheThreadPool:无限线程数，适用于要求低延迟的短期任务场景
+    c.newSingleThreadExecutor:单个线程的固定线程池，适用于保证异步执行顺序的场景
+    d.newScheduledThreadPool:适用于定期执行任务场景，支持固定频率和固定延迟
+    e.newWorkStealingPool:使用ForkJoinPool，多任务队列的固定并行度，适合任务执行时长不均匀的场景
