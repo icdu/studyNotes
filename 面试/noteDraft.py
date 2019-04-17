@@ -123,6 +123,7 @@
       b.Synchronized  (https://blog.csdn.net/javazejian/article/details/72828483#synchronized的三种应用方式) synchronized的可重入性
        JVM   Java6后，引入偏向锁和轻量锁自旋锁，性能与Lock持平
       c.Lock reetrantlock  JDK  带高级功能
+        tryLock()/lockinterruptibly()、RenntrantReadWriteLock()、ReentrantLock()
         (https://www.cnblogs.com/aishangJava/p/6555291.html)(https://blog.csdn.net/qpzkobe/article/details/78586619)
   
   7.线程池：
