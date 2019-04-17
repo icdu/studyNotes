@@ -120,8 +120,9 @@
   6.同步与互斥：
     解决同步与互斥方法： 
       a.CAS CompareAndSwap即比较交换(https://blog.csdn.net/mmoren/article/details/79185862) AtomicStampedReference原子类是一个带有时间戳的对象引用
-      b.Synchronized
-      c.Lock reetrantlock
+      b.Synchronized  (https://blog.csdn.net/javazejian/article/details/72828483#synchronized的三种应用方式) 
+       JVM   Java6后，引入偏向锁和轻量锁自旋锁，性能与Lock持平
+      c.Lock reetrantlock  JDK  带高级功能
   
   7.线程池：
   
