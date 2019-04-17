@@ -143,3 +143,5 @@
     c.newSingleThreadExecutor:单个线程的固定线程池，适用于保证异步执行顺序的场景
     d.newScheduledThreadPool:适用于定期执行任务场景，支持固定频率和固定延迟
     e.newWorkStealingPool:使用ForkJoinPool，多任务队列的固定并行度，适合任务执行时长不均匀的场景
+    THreadPoolExecutor(int corePoolSize,int maximumPoolSize,long keepAliveTime,TimeUnit unit,
+                      BlockingQueue<Runnable> workQueue,ThreadFactory threadFactory,RejectedExecutorHandler handler)
