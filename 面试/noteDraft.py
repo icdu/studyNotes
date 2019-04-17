@@ -103,8 +103,11 @@
     产生条件：互斥、请求并持有、非剥夺、循环等待
     
   2.线程通信：主要指线程之间的协作机制，比如wait、notify、notifyAll
+  
   3.线程状态转化：new、runnanle、bloacked、time_waiting、waiting、terminated(https://blog.csdn.net/qq_41665476/article/details/80225592)
+ 
   4.常用工具类(JUC)：
+  
   5.机制：java为多线程提供的机制
     a.ThreadLocal:用来保存线程独享的数据(https://www.jianshu.com/p/98b68c97df9b)(https://www.cnblogs.com/dolphin0520/p/3920407.html)
       (https://www.jianshu.com/p/dde92ec37bd1)(https://blog.csdn.net/yezis/article/details/57513130)
@@ -117,6 +120,7 @@
 　　  2）它会强制将对缓存的修改操作立即写入主存；
 　　  3）如果是写操作，它会导致其他CPU中对应的缓存行无效。
     d.Interrupt:(https://www.cnblogs.com/skywang12345/p/3479949.html)isInterrupted()、添加标记
+      
   6.同步与互斥：
     解决同步与互斥方法： 
       a.CAS CompareAndSwap即比较交换(https://blog.csdn.net/mmoren/article/details/79185862) AtomicStampedReference原子类是一个带有时间戳的对象引用
@@ -132,6 +136,7 @@
            (5) Lock可以提高多个线程进行读操作的效率。
            在性能上来说，如果竞争资源不激烈，两者的性能是差不多的。而当竞争资源非常激烈时（即有大量线程同时竞争），
            此时Lock的性能要远远优于synchronized。所以说，在具体使用时要根据适当情况选择。
+                       
   7.线程池：Executors
     a.newFixedThreadPool:固定线程数，无界序列，适用于任务数量不均匀的场景、对内存压力不敏感，但系统负载比较敏感的场景
     b.newCacheThreadPool:无限线程数，适用于要求低延迟的短期任务场景
