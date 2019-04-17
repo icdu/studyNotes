@@ -108,7 +108,13 @@
     ThreadLocal:用来保存线程独享的数据(https://www.jianshu.com/p/98b68c97df9b)(https://www.cnblogs.com/dolphin0520/p/3920407.html)
       (https://www.jianshu.com/p/dde92ec37bd1)(https://blog.csdn.net/yezis/article/details/57513130)
     Fork/Join:用于大任务的分割与汇总(http://ifeve.com/talk-concurrency-forkjoin/)
-    Volatile:对多线程数据可见性的保障
+    Volatile:对多线程数据可见性的保障(https://www.cnblogs.com/dolphin0520/p/3920373.html)
+      “观察加入volatile关键字和没有加入volatile关键字时所生成的汇编代码发现，加入volatile关键字时，会多出一个lock前缀指令”
+　　  lock前缀指令实际上相当于一个内存屏障（也成内存栅栏），内存屏障会提供3个功能：
+　　  1）它确保指令重排序时不会把其后面的指令排到内存屏障之前的位置，也不会把前面的指令排到内存屏障的后面；即在执行到内存屏障这句指令时，
+        在它前面的操作已经全部完成；
+　　  2）它会强制将对缓存的修改操作立即写入主存；
+　　  3）如果是写操作，它会导致其他CPU中对应的缓存行无效。
     Interrupt:
   6.同步与互斥：
   7.线程池：
