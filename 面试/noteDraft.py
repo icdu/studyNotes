@@ -104,11 +104,11 @@
   2.线程通信：主要指线程之间的协作机制，比如wait、notify、notifyAll
   3.线程状态转化：new、runnanle、bloacked、time_waiting、waiting、terminated
   4.常用工具类(JUC)：
-  5.机制：
+  5.机制：java为多线程提供的机制
     ThreadLocal:用来保存线程独享的数据(https://www.jianshu.com/p/98b68c97df9b)(https://www.cnblogs.com/dolphin0520/p/3920407.html)
       (https://www.jianshu.com/p/dde92ec37bd1)(https://blog.csdn.net/yezis/article/details/57513130)
-    Fork/Join:
-    Volatile:
+    Fork/Join:用于大任务的分割与汇总(http://ifeve.com/talk-concurrency-forkjoin/)
+    Volatile:对多线程数据可见性的保障
     Interrupt:
   6.同步与互斥：
   7.线程池：
