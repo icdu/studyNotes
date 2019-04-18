@@ -51,7 +51,7 @@
       封箱和拆箱：
       
     b.常用集合：掌握集合类如何实现()
-      HashMap：(非线程安全)(https://www.cnblogs.com/chengxiao/p/6059914.html)
+      HashMap：散列表(非线程安全)(https://www.cnblogs.com/chengxiao/p/6059914.html)
         数组加链表的实现方式
         容量大小是2的幂次方的原因(https://blog.csdn.net/wanghuan220323/article/details/78242449)、并发读写会有什么风险
         --Map的实现能够考察到数据结构，Java基础实现，以及对并发问题处理思路的掌握程度
@@ -63,7 +63,6 @@
       ConcurrentHashMap：(线程安全)
         并发控制与分段锁思想:降低并发场景下锁定发生频率，1.7和1.8中实现方式比较大
         1.8中的CAS自旋锁(并发量大时效率一般)
-        
       ArrayList:是可以动态增长和缩减的索引序列，是基于数组实现的List类(https://www.cnblogs.com/xujian2014/p/4625346.html)  capacity  iterator
       LinkedList：是一种可以子啊任意位置高效地插入和移除操作的有序序列，基于双向链表实现的(https://www.cnblogs.com/xujian2014/p/4630785.html)
       HashSet：
