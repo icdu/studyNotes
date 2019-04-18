@@ -85,7 +85,9 @@
       虚引用：必须和引用队列ReferenceQueue联合使用，主要用于跟踪一个对象被垃圾回收的过程
       
     e.动态代理与反射：掌握使用场景，ORM框架中大量使用代理类，RPC调用时会使用反射机制，调用实现类的方法；   大量使用会造成性能影响
-    
+      JAVA不可变类(immutable)机制与String的不可变性(https://www.cnblogs.com/jaylon/p/5721571.html)
+      
+      
     f.异常机制：try catch finally机制，需要知道error和Exception的区别 
     
     g.版本差异新特性：
