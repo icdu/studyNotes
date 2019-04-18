@@ -50,7 +50,7 @@
       自动转型和强制转型：
       封箱和拆箱：
       
-    b.常用集合：掌握集合类如何实现()
+    b.常用集合：掌握集合类如何实现(https://www.cnblogs.com/skywang12345/p/3323085.html)
       HashMap：散列表(非线程安全)(https://www.cnblogs.com/chengxiao/p/6059914.html)(https://segmentfault.com/a/1190000012926722)
         数组加链表的实现方式
         容量大小是2的幂次方的原因、并发读写会有什么风险
@@ -65,7 +65,7 @@
         1.8中的CAS自旋锁(并发量大时效率一般)
       ArrayList:是可以动态增长和缩减的索引序列，是基于数组实现的List类(https://www.cnblogs.com/xujian2014/p/4625346.html)  capacity  iterator
       LinkedList：是一种可以子啊任意位置高效地插入和移除操作的有序序列，基于双向链表实现的(https://www.cnblogs.com/xujian2014/p/4630785.html)
-      HashSet：
+      HashSet：一个没有重复元素的集合，由HashMap实现的，不保证元素的顺序，允许使用null元素(https://www.cnblogs.com/skywang12345/p/3311252.html)
       HashTree：
       CopyOnWriteArrayList和CopyOnWriteArraySet:CopyOnWrite容器(https://www.cnblogs.com/dolphin0520/p/3938914.html)
       
@@ -105,7 +105,7 @@
   
   
   
-四、并发与多线程
+四、并发与多线程(https://www.cnblogs.com/skywang12345/p/java_threads_category.html)
   线程实现：实现Runnable接口、实现Callable接口(返回值通过FutureTask进行封装)、继承Thread类
   1.死锁：
     竞争条件与临界区(https://blog.csdn.net/shfqbluestone/article/details/46059879)(https://blog.csdn.net/u010715440/article/details/79503472)
