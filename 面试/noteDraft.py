@@ -60,7 +60,7 @@
         按位与操作来计算余数，比求模要快。另外HashMap是非线程安全的，在多线程put的情况下，有可能在容量超过填充因子时，进行rehash，因为HashMap为了
         避免尾部遍历，在链表的插入时使用的是头插法，多线程场景下可能会产生死循环。
         rehash:(https://www.jianshu.com/p/13c650a25ed3)
-      ConcurrentHashMap：(线程安全)
+      ConcurrentHashMap：(线程安全)(https://blog.csdn.net/jjc120074203/article/details/78625433)
         并发控制与分段锁思想:降低并发场景下锁定发生频率，1.7和1.8中实现方式比较大
         1.8中的CAS自旋锁(并发量大时效率一般)
       ArrayList:是可以动态增长和缩减的索引序列，是基于数组实现的List类(https://www.cnblogs.com/xujian2014/p/4625346.html)  capacity  iterator
