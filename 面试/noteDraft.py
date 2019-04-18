@@ -51,7 +51,7 @@
       封箱和拆箱：
       
     b.常用集合：掌握集合类如何实现()
-      HashMap：(非线程安全)(https://www.jianshu.com/p/13c650a25ed3)(https://www.cnblogs.com/cugb-2013/p/3517747.html)
+      HashMap：(非线程安全)(https://www.cnblogs.com/chengxiao/p/6059914.html)
         数组加链表的实现方式
         容量大小是2的幂次方的原因(https://blog.csdn.net/wanghuan220323/article/details/78242449)、并发读写会有什么风险
         --Map的实现能够考察到数据结构，Java基础实现，以及对并发问题处理思路的掌握程度
@@ -59,6 +59,7 @@
         链表中的节点存储的是键值对。除了实现的方式，我们还要知道填充因子的作用，与扩容是的rehash机制，需要知道map容量大小是2的幂次方的原因，因为通过
         按位与操作来计算余数，比求模要快。另外HashMap是非线程安全的，在多线程put的情况下，有可能在容量超过填充因子时，进行rehash，因为HashMap为了
         避免尾部遍历，在链表的插入时使用的是头插法，多线程场景下可能会产生死循环。
+        rehash:(https://www.jianshu.com/p/13c650a25ed3)
       ConcurrentHashMap：(线程安全)
         并发控制与分段锁思想:降低并发场景下锁定发生频率，1.7和1.8中实现方式比较大
         1.8中的CAS自旋锁(并发量大时效率一般)
