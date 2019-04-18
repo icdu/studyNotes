@@ -49,6 +49,7 @@
       基本数据结构：
       自动转型和强制转型：
       封箱和拆箱：
+      
     b.常用集合：掌握集合类如何实现()
       HashMap：(非线程安全)(https://www.jianshu.com/p/13c650a25ed3)(https://www.cnblogs.com/cugb-2013/p/3517747.html)
         数组加链表的实现方式
@@ -64,6 +65,8 @@
       ArrayList&&LinedList：
       HashSet：
       HashTree：
+      CopyOnWriteArrayList和CopyOnWriteArraySet:CopyOnWrite容器(https://www.cnblogs.com/dolphin0520/p/3938914.html)
+      
     c.JUC：(多线程)
       ConcurrentXXX：
       AtomicXXX：
@@ -71,19 +74,24 @@
       Caller&&Future：
       Queue：
       Loacks：
+      
     d.对象引用：(https://www.cnblogs.com/dolphin0520/p/3592498.html)这些引用在JC的处理策略不同
       (https://blog.csdn.net/sinat_21118695/article/details/82392028)
       强引用：不会被JC回收    强应用使用不当有可能造成内存泄漏(https://cloud.tencent.com/developer/article/1362804)
       软引用：内存空间不足时会被JC回收(https://www.cnblogs.com/dolphin0520/p/3784171.html)
       弱引用：每次JC时都会被回收(https://www.jianshu.com/p/dde92ec37bd1)(http://www.importnew.com/21206.html)(https://www.jianshu.com/p/964fbc30151a)
       虚引用：必须和引用队列ReferenceQueue联合使用，主要用于跟踪一个对象被垃圾回收的过程
+      
     e.动态代理与反射：掌握使用场景，ORM框架中大量使用代理类，RPC调用时会使用反射机制，调用实现类的方法；   大量使用会造成性能影响
+    
     f.异常机制：try catch finally机制，需要知道error和Exception的区别 
+    
     g.版本差异新特性：
       V1.8：Lambda表达式、Stream API、方法引用、接口默认方法(简化掉简单的抽象类)、
             Metaspace替换PermGem   M不在虚拟机中使用的是本地内存，替换的原因是提升对原数据的处理，提高GC效率，另一方面方便后续合并
       V1.9：模块系统、默认G1回收器、接口私有方法、局部变量推断、Graal编译器
       V1.11：ZGC(大内存堆设置的新的垃圾回收器)、字符串API增强、内建HTTP Client
+      
     k.拓展知识点：
       SPI机制：
       注解处理机制
@@ -149,4 +157,4 @@
              DisCard：也是丢弃任务，但是不抛出异常。
              CallerRuns：丢弃队列最前面的任务，然后重新尝试执行任务（重复此过程）
              DisneycardOldest：由调用线程处理该任务                  
-   8.CopyOnWrite容器：https://www.cnblogs.com/dolphin0520/p/3938914.html
+  
