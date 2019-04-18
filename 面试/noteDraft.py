@@ -63,7 +63,7 @@
         并发控制与分段锁思想:降低并发场景下锁定发生频率，1.7和1.8中实现方式比较大
         1.8中的CAS自旋锁(并发量大时效率一般)
       ArrayList:是可以动态增长和缩减的索引序列，是基于数组实现的List类(https://www.cnblogs.com/xujian2014/p/4625346.html)  capacity
-      LinedList：
+      LinkedList：是一种可以子啊任意位置高效地插入和移除操作的有序序列，基于双向链表实现的(https://www.cnblogs.com/xujian2014/p/4630785.html)
       HashSet：
       HashTree：
       CopyOnWriteArrayList和CopyOnWriteArraySet:CopyOnWrite容器(https://www.cnblogs.com/dolphin0520/p/3938914.html)
