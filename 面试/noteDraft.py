@@ -145,5 +145,8 @@
     e.newWorkStealingPool:使用ForkJoinPool，多任务队列的固定并行度，适合任务执行时长不均匀的场景
     THreadPoolExecutor(int corePoolSize,int maximumPoolSize,long keepAliveTime,TimeUnit unit,
                       BlockingQueue<Runnable> workQueue,ThreadFactory threadFactory,RejectedExecutorHandler handler)
-                       
+    拒绝策略：Abort：丢弃任务并抛出RejectedExecutionException异常。(默认)
+             DisCard：也是丢弃任务，但是不抛出异常。
+             CallerRuns：丢弃队列最前面的任务，然后重新尝试执行任务（重复此过程）
+             DisneycardOldest：由调用线程处理该任务                  
    8.CopyOnWrite容器：https://www.cnblogs.com/dolphin0520/p/3938914.html
