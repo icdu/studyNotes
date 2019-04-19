@@ -33,11 +33,11 @@
       避免前序包阻塞(HQL阻塞)、零RTT链接、FEC前向纠错
       
 二、Java语言特性和设计模式
-  1.设计模式：在什么场景下是用什么模式(https://www.cnblogs.com/geek6/p/3951677.html)
+  1.设计模式：在什么场景下是用什么模式(https://www.cnblogs.com/geek6/p/3951677.html)(https://www.jianshu.com/p/77fcd3e8f9f7)
     单例模式：1.静态初始化(饿汉式)2.双重检查(懒汉式)3.单例注册表
     工厂模式：Spring如何创建Bean
-    代理模式：Motan服务的动态代理
-    构造者模式：PB序序列化中的Builder
+    代理模式：Motan服务的动态代理(https://www.jianshu.com/p/c06a686dae39)
+    构造者模式：PB序列化中的Builder
     责任链模式：Neety消息处理方式
     适配器模式：SLF4如何支持Log4J
     观察者模式：GRPC是如何支持流式请求的
