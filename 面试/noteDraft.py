@@ -209,8 +209,10 @@
       lua脚本：
       事物:不是严格的事物，保证串行执行命令，失败不会回滚，继续执行下去
     c.数据持久化 (https://www.cnblogs.com/chenliangcl/p/7240350.html)(https://blog.csdn.net/A_BlackMoon/article/details/85246554)
-      AOF:
-      RDB:
+      AOF:是以文本日志的形式记录redis处理的每一个写入或删除操作。
+         AOF对日志文件的写入方式使用追加模式，有灵活的同步策略，支持每秒同步、每次修改同步和不同步；缺点是相同规模的数据集，AOF要大于RDB，AOF要运行效率上要慢与RDB。              
+      RDB:在指定时间内将内存中的数据集以快照形式写入磁盘，实际操作是通过fork子进程执行的，采用二进制压缩存储。
+         RDB把整个redis数据保存单一文件中，比较适合做灾备，缺点是快照保存完成之前宕机，这段时间的数据将会丢失；另外保存快照是可能会导致服务短时间不可用。
     d.redis cluster
       Sentinel:
       主从同步: 
