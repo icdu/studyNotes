@@ -179,10 +179,14 @@
     b.LRU(最近最少使用)
     c.LFU(根据历史访问频率)
   3.缓存的问题
-    a.缓存不一致：
-    b.缓存更新：
-    c.缓存击穿：
-    d.缓存雪崩：
+    a.缓存更新方式: 数据变更、缓存时效性     同步更新、失效更新，异步更新，定时更新
+    b.缓存不一致： 同步更新失败、异步更新    增加重试、补偿任务，最终一致
+    c.缓存穿透：   恶意攻击                空对象缓存，bloomFilter过滤器
+    d.缓存击穿：   热点key失效             互斥更新、随机退避、差异失效时间
+    e.缓存雪崩：   缓存挂掉                快速失败熔断、主从模式、集群模式
+    (https://blog.csdn.net/haoxin963/article/details/83245113)
+    (https://blog.csdn.net/fanrenxiang/article/details/80542580)
+    (https://www.cnblogs.com/zhangweizhong/p/6258797.html)
   4.Memcache:
     a.特点：
        多线程：
@@ -218,7 +222,7 @@
          AOF对日志文件的写入方式使用追加模式，有灵活的同步策略，支持每秒同步、每次修改同步和不同步；缺点是相同规模的数据集，AOF要大于RDB，AOF要运行效率上要慢与RDB。              
       RDB:在指定时间内将内存中的数据集以快照形式写入磁盘，实际操作是通过fork子进程执行的，采用二进制压缩存储。
          RDB把整个redis数据保存单一文件中，比较适合做灾备，缺点是快照保存完成之前宕机，这段时间的数据将会丢失；另外保存快照是可能会导致服务短时间不可用。
-    d.redis cluster（https://blog.csdn.net/fouy_yun/article/details/81590252）(https://www.cnblogs.com/huangfuyuan/p/9880379.html)
+    d.△redis cluster（https://blog.csdn.net/fouy_yun/article/details/81590252）(https://www.cnblogs.com/huangfuyuan/p/9880379.html)
       Sentinel:通过Sentinel哨兵来监控Redis主服务器的状况(https://blog.csdn.net/angjunqiang/article/details/81190562)
                (https://arthur2014.iteye.com/blog/2368657)
       主从同步: 
