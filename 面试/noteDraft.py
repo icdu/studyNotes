@@ -220,6 +220,7 @@
          RDB把整个redis数据保存单一文件中，比较适合做灾备，缺点是快照保存完成之前宕机，这段时间的数据将会丢失；另外保存快照是可能会导致服务短时间不可用。
     d.redis cluster（https://blog.csdn.net/fouy_yun/article/details/81590252）(https://www.cnblogs.com/huangfuyuan/p/9880379.html)
       Sentinel:通过Sentinel哨兵来监控Redis主服务器的状况(https://blog.csdn.net/angjunqiang/article/details/81190562)
+               (https://arthur2014.iteye.com/blog/2368657)
       主从同步: 
       master选举:
     f:key失效机制
