@@ -200,15 +200,15 @@
        多数据结构：string、hash、list、set、zset
        主从模式：
     b.功能
-      bitmap：用setbit(bitmap)统计上亿访问量活跃用户
+      bitmap：用setbit(bitmap)统计上亿访问量活跃用户，可实现bloomfilter
          (https://blog.csdn.net/u011489043/article/details/78990162)(https://www.cnblogs.com/devilwind/p/7374017.html)(https://www.jianshu.com/p/62cf39db5c2f)
-      hyperLogLog：
-      geospatial：
-      pub/sub：
-      pipeline：
+      hyperLogLog：大规模数据去重统计，
+      geospatial：保存地理位置,位置距离计算，或者根据半径计算位置
+      pub/sub：订阅发布功能，用作简单的消息队列
+      pipeline：批量执行一组指令，一次性返回全部结果，可减少频繁的请求应答
       lua脚本：
-      事物:
-    c.数据持久化
+      事物:不是严格的事物，保证串行执行命令，失败不会回滚，继续执行下去
+    c.数据持久化 (https://www.cnblogs.com/chenliangcl/p/7240350.html)(https://blog.csdn.net/A_BlackMoon/article/details/85246554)
       AOF:
       RDB:
     d.redis cluster
