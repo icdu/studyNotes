@@ -189,15 +189,50 @@
        异步IO：
        KV储存：
        内存存储，没有持久化：
-    b.内存结构：
-    c.钙化问题：
-    d.失效和删除机制：
+    b.内存结构：Slab = Chunk + Page(1M)    Slab初始化:Chunk大小的增长因子，Chunk大小初始值，Page大小
+    c.钙化问题：(https://blog.csdn.net/weixin_34247032/article/details/87105559)LRU只会淘汰同一级别的Slab数据
+    d.失效和删除机制：设置失效期，采用延迟失效删除
     f.限制：key小于250B、value小鱼1M、过期时间小于30天
  5.Redis:
     a.特点：
        单线程异步IO：
        支持持久化：
-       多数据结构：
+       多数据结构：string、hash、list、set、zset
        主从模式：
-                      
-    
+    b.功能
+      bitmap：用setbit(bitmap)统计上亿访问量活跃用户
+         (https://blog.csdn.net/u011489043/article/details/78990162)(https://www.cnblogs.com/devilwind/p/7374017.html)(https://www.jianshu.com/p/62cf39db5c2f)
+      hyperLogLog：
+      geospatial：
+      pub/sub：
+      pipeline：
+      lua脚本：
+      事物:
+    c.数据持久化
+      AOF:
+      RDB:
+    d.redis cluster
+      Sentinel:
+      主从同步: 
+      master选举:
+    f:key失效机制
+      主动删除：
+      被动善春：
+    g:淘汰策略
+      voltile-lru:                  
+      voltile-all:                 
+      voltile-random:                 
+      allkeys-lru:                  
+      allkeys-all:                 
+      allkeys-random: 
+      no-eviction:                 
+    f.4.0/5.0新特性                       
+      Module:
+      Stream:
+      PSYNC 2.0:
+      混合 RD      格式：
+                       
+                       
+                       
+                       
+                       
