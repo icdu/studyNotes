@@ -101,30 +101,44 @@
       SPI机制：
       注解处理机制:
  
-三、深入浅出JVM
-  1.内存模型 (作用和保存哪些数据)
-    a.程序计数器:
-    b.方法区:
-    c.堆:
-    d.栈:
-    e.本地方法栈:
+三、深入浅出JVM  (https://segmentfault.com/a/1190000014395186)
+  1.内存模型:运行时的数据区(作用和保存哪些数据)
+    a.程序计数器(Program Counter Register):指向当前线程正在执行的字节码指令。
+      线程私有   
+    b.方法区(Method Area):用于存储已被虚拟机加载的类信息、常量、静态变量、即时编译后的代码等数据。
+      线程共享
+    c.堆(Heap): Java对象存储的地方。超出时OOM
+      线程共享          
+    d.虚拟机栈(VM Stack):Java执行方法的内存模型。每个方法被执行的时候，都会创建一个栈帧，把栈帧压人栈，当方法正常返回或者抛出未捕获的异常时，栈帧就会出栈。  
+      线程私有 
+    e.本地方法栈(Native Method Stack):调用本地native的内存模型
+      线程私有
+    JMM(Java Memory Model)和内存可见性：
+      原子性：基本数据类型读或写(long、double除外)、synchronized
+      可见性：synchronized、volatile
+      有序性：volatile、happens-before原则
     
-  2.类加载
-    a.双亲委派模式:
-    b.Bootstrap类加载器:
-    c.Extension类加载器:
-    d.System类加载器
-    e.自定义类加载器
+  2.类加载：
+    a.概念：类加载器把class文件中的二进制数据读入到内存中，存放在方法区，然后在堆区创建一个java.lang.Class对象，用来封装类在方法区内的数据结构。
+      加载-》连接-》初始化-》使用-》卸载
+             ||
+      验证-》准备-》解析
+    b.双亲委派模式:
+      Bootstrap类加载器:启动类加载器 <JAVA_HOME>/lib
+      Extension类加载器:扩展类加载器 <JAVA_HOME>/lib/ext
+      System类加载器:系统/应用加载   java - classpath
+      自定义类加载器:Custom ClassLoader
   
   3.GC
     a.分代回收:
-      年轻代:
-      老年代:
-      持久代:
+      年轻代: Eden + Survivor1 + Survivor2
+      老年代: Tenured
+      持久代: PermGen/Metaspace     保存类信息等内容
     b.回收器实现：(思路和适合场景)
       串型回收器:
       并行回收器:
-      CMS:
+      CMS算法:属于标记清除算法，JDK1.7以前的主流算法，并发收集，停顿小
+      G1算法：年轻代回收(并行复制STW)+老年代回收(初始标记STW、并发标记、最终标记STW、复制/清除STW)
       GC:
       ZGC:
   
