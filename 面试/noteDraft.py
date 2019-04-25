@@ -101,7 +101,7 @@
       SPI机制：
       注解处理机制:
  
-三、深入浅出JVM  (https://segmentfault.com/a/1190000014395186)
+三、深入浅出JVM  (https://segmentfault.com/a/1190000014395186)(https://blog.csdn.net/qq_41701956/article/details/81664921)
   1.内存模型:运行时的数据区(作用和保存哪些数据)
     a.程序计数器(Program Counter Register):指向当前线程正在执行的字节码指令。
       线程私有   
@@ -113,6 +113,7 @@
       线程私有 
     e.本地方法栈(Native Method Stack):调用本地native的内存模型
       线程私有
+      
     JMM(Java Memory Model)和内存可见性：
       原子性：基本数据类型读或写(long、double除外)、synchronized
       可见性：synchronized、volatile
@@ -129,7 +130,7 @@
       System类加载器:系统/应用加载   java - classpath
       自定义类加载器:Custom ClassLoader
   
-  3.GC
+  3.GC   (https://baijiahao.baidu.com/s?id=1605937053950156833&wfr=spider&for=pc)
     a.分代回收:
       年轻代: Eden + Survivor1 + Survivor2
       老年代: Tenured
