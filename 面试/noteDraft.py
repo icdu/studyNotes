@@ -312,6 +312,37 @@
 六、常用工具类：
                   
 七、必会框架：
+  1.Spring
+    a.Spring Framework：IOC、AOP、依赖注入、Context上下文、Bean管理、SpringMVC
+    b.Spring Boot：简化Spring应用的创建、开发与部署， 简化配置文件，使用嵌入式web服务，还有诸多开箱即用的微服务功能，可以与SpringCloud联合部署。
+        核心思想是约定大于配置，应用只需要极少的配置即可，简化了应用开发模式。               
+    c.Spring Data：是数据访问和操作的工具集。封装了对多种数据源的操作能力，包括JDBC、Redis、MongoDB等。
+    d.Spring Cloud：是完整的微服务解决方案，是一系列不同功能微服务的集合。基于SpringBoot，简化了分布式系统的开发，集成了服务发现、配置管理、
+         消息总线、负载均衡、断路器、数据监控等各种服务治理能力。
+      1).Sleuth：提供了全链路追踪能力
+      2).Netflix：提供了熔断器、作用网关等众多的治理组件
+      3).Config：提供了动态配置能力
+      4).Bus：支持了RabbitMQ、Kafka、ActiveMq消息队列，实现分布式服务之间的事件通信
+      5).Security：用于快速的构建安全的应用程序和服务    
+   
+    Spring Boot+Cloud可以实现常见安全模型，比如单点登录、令牌中继、令牌交换等
+    
+  2.Struts：MVC控制层  和SpringMVC区别(SSM)
+      Strus采用filter实现，根据类进行拦截，每次请求就会创建一个action，  
+    
+  3.ORM:简单来说就是把关系数据库的数据转化成面向程序中的对象。
+    a.Hibernate：对数据库结构提供了完整的封装，实现了pojo对象与数据库表之间的映射，能自动生成和执行sql语句。
+    b.Mybatis： 通过映射配置文件，将sql所需要的参数和返回结果映射到指定对象，mybatis不会自动生成sql，需要自己定义sql语句，自己实现sql优化。
+    
+  4.Netty：是一个高性能的异步事件驱动的网络框架，对JDK原生的ORO进行封装，简化了网络服务的开发。
+  5.RPC
+    a.Motan
+    b.Dubbo
+    c.Grpc  
+  6.其他框架
+    a.Jersey
+    b.RESTEasy
+    c.Shiro                  
                        
 八、高并发架构的基石-缓存
   缓存是高并发场景下提高热点数据访问性能的有效手段。
