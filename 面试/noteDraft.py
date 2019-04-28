@@ -330,10 +330,54 @@
     详解：
     1）Spring IOC与AOP:Dependecy Injection/Inversion of Control(https://www.cnblogs.com/superjt/p/4275462.html)
       Java 反射：说的是在运行状态中，对于任何一个类，我们都能够知道这个类有哪些方法和属性。(https://baijiahao.baidu.com/s?id=1619748187138646880&wfr=spider&for=pc)
-      AOP:  了解相关注解
-        静态代理：在编译时进行织入，或者类加载时进行织入，比如aspectJ。
-        动态代理：运行时增强，比如JDK代理
-        
+      AOP:  
+          静态代理：在编译时进行织入，或者类加载时进行织入，比如aspectJ。
+          动态代理：运行时增强，比如JDK代理
+      PlaceHolder动态替换：PropertyPlaceholderConfigurer/PropertySourcesPlaceholderConfigurer(https://blog.csdn.net/difffate/article/details/70186293)  
+      事物：
+          隔离级别：事物的隔离级别是由具体数据库实现的
+          传播类型：PROPAGATION_REQUEST、PROPAGATION_SUPPORTS(https://blog.csdn.net/weixin_38070406/article/details/78157603)
+      核心借口/类：
+          ApplicaationContext:保存IOC整个应用上下文，通过其中的beanfactory获得任意bean
+          BeanFactory:主要作用是通过bean的描述来创建具体的bean
+          BeanWrapper:是对bean的包装，一般情况下是在SpringIOC的内部使用，提供了访问bean的属性值、属性编辑器注册、类型转换等功能，方便IOC容器用统一的方式访问bean的属性。
+          FactoryBean:通过getObject()方法返回实际的bean对象
+      scope作用域:Singleton(默认)、Prototype、Request、Seesion、Global-Session、Application、Websockert(https://www.cnblogs.com/dyppp/p/7397290.html)
+      事件机制：ContextRefreshEvent、ContextStartedEvent、ContextStoppedEvent、ContextCloseEvent、RequestHandledEvent
+      
+      Spring Context初始化流程：(https://blog.csdn.net/u010209217/article/details/80828067)
+           AbstractAC.refresh()<---ClassPathXmlAC、SpringAC、WebAC
+           1).prepareRefresh():对刷新进行准备，包括设置开始时间、激活状态、初始化Context环境中的占位符。这个动作根据子类需求由子类执行，然后
+                    验证是否确实必要的prepareRefresh。
+           2).ConfigurableListableBeabFactory beanfactory = obtainFreshBeanFactory():刷新并获取内部的beanfactory
+           3).prepareBeanFactory(beanfactory):对beanfactory进行准备工作，比如设置类加载器和后置处理器，配置不能自动装配的数据类型，注册
+                    默认的环境bean。
+           4).postProcessBeanFactory(beanfactory):为context的子类提供后置处理beanfactory的扩展能力，如果子类想要在bean定义加载完成后，
+                    开始初始化上下文之前做一些特殊逻辑，写覆写这个方法。
+           5).invokeBeanFactoryPostProcess(beanfactory):执行context中注册的beanfactory后置处理器。有两种后置处理器，一种可注册bean
+                    的后置处理器，另一种是针对beanfactory进行处理的后置处理器。执行的顺序是先按优先级执行可注册bean的处理器，然后再按优先级
+                    执行针对beanfactory进行处理的后置处理器。
+                  对于SpringBoot来说，这一步会进行注解BeanDefinitions的解析，流程如下：
+                    ConfigurationClassPostProcessor->ConfigurationClassParser->ClassPathBeanDefinitionScanner
+           6).registerBeanPostProssors(beanfactory): 
+           7).initMesageSource(): 
+           8).initApplicationEventMulticaster():
+           9).onRefresh():
+           10).registerListeners():
+           11).finishBeanFactorynitialization(beanfatory):
+           12).finishRefresh():
+           13).resetCommonCaches():
+            
+      Spring应用
+      常用注解：(https://www.jianshu.com/p/71e8971d2bc5?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)
+           类型类：  +add PIC
+           设置类：
+           Web类：
+           功能类：
+     配置方式：XML、注解、API 
+     自动装配：byType、byName、constructor、autodetect
+     集合属性注入：
+     内部bean：
      
   2.Struts：MVC控制层  和SpringMVC区别(SSM)
       Strus采用filter实现，根据类进行拦截，每次请求就会创建一个action，  
