@@ -345,7 +345,7 @@
       scope作用域:Singleton(默认)、Prototype、Request、Seesion、Global-Session、Application、Websockert(https://www.cnblogs.com/dyppp/p/7397290.html)
       事件机制：ContextRefreshEvent、ContextStartedEvent、ContextStoppedEvent、ContextCloseEvent、RequestHandledEvent
       
-      阅读源码：
+      阅读源码： 
       Spring Context初始化流程：(https://blog.csdn.net/u010209217/article/details/80828067)
            AbstractAC.refresh()<---ClassPathXmlAC、SpringAC、WebAC
            1).prepareRefresh():对刷新进行准备，包括设置开始时间、激活状态、初始化Context环境中的占位符。这个动作根据子类需求由子类执行，然后
