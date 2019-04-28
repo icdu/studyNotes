@@ -358,15 +358,18 @@
                     的后置处理器，另一种是针对beanfactory进行处理的后置处理器。执行的顺序是先按优先级执行可注册bean的处理器，然后再按优先级
                     执行针对beanfactory进行处理的后置处理器。
                   对于SpringBoot来说，这一步会进行注解BeanDefinitions的解析，流程如下：
-                    ConfigurationClassPostProcessor->ConfigurationClassParser->ClassPathBeanDefinitionScanner
-           6).registerBeanPostProssors(beanfactory): 
-           7).initMesageSource(): 
-           8).initApplicationEventMulticaster():
-           9).onRefresh():
-           10).registerListeners():
-           11).finishBeanFactorynitialization(beanfatory):
-           12).finishRefresh():
-           13).resetCommonCaches():
+                    ConfigurationClassPostProcessor触发->ConfigurationClassParser->ClassPathBeanDefinitionScanner解析
+           6).registerBeanPostProssors(beanfactory): 按优先级顺序在beanfactory中注册bean的后置处理器，bean的后置处理器可以再bean初始化
+                    的前后进行处理。
+           7).initMesageSource(): 初始化消息源，消息源用来支持消息的国际化。
+           8).initApplicationEventMulticaster():初始化应用事件广播器，用来向ApplicationListener通知各种应用产生的事件，是一个标准的
+                    观察者模式。
+           9).onRefresh():是留给子类的扩展步骤。用来特定的Context子类初始化其他的bean
+           10).registerListeners():把实现ApplicationListener的bean注册到事件广播器，并对广播器中早期没有广播的事件进行通知。
+           11).finishBeanFactorynitialization(beanfatory):冻结所有bean描述信息的修改，实例化非延迟加载的单例bean。
+           12).finishRefresh():完成上下文的刷新工作，调用LifecycleProcessor的onFresh()方法以及发布ContextRefreshedEvent事件。
+           13).resetCommonCaches():在finally中执行13步，重置公用的缓存，比较典型的如： ReflectionUtils, ResolvableType
+            以及CachedIntrospectionResults的缓存
             
       Spring应用
       常用注解：(https://www.jianshu.com/p/71e8971d2bc5?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)
