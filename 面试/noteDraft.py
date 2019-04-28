@@ -327,6 +327,14 @@
    
     Spring Boot+Cloud可以实现常见安全模型，比如单点登录、令牌中继、令牌交换等
     
+    详解：
+    1）Spring IOC与AOP:Dependecy Injection/Inversion of Control(https://www.cnblogs.com/superjt/p/4275462.html)
+      Java 反射：说的是在运行状态中，对于任何一个类，我们都能够知道这个类有哪些方法和属性。(https://baijiahao.baidu.com/s?id=1619748187138646880&wfr=spider&for=pc)
+      AOP:  了解相关注解
+        静态代理：在编译时进行织入，或者类加载时进行织入，比如aspectJ。
+        动态代理：运行时增强，比如JDK代理
+        
+     
   2.Struts：MVC控制层  和SpringMVC区别(SSM)
       Strus采用filter实现，根据类进行拦截，每次请求就会创建一个action，  
     
