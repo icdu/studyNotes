@@ -345,6 +345,7 @@
       scope作用域:Singleton(默认)、Prototype、Request、Seesion、Global-Session、Application、Websockert(https://www.cnblogs.com/dyppp/p/7397290.html)
       事件机制：ContextRefreshEvent、ContextStartedEvent、ContextStoppedEvent、ContextCloseEvent、RequestHandledEvent
       
+      阅读源码：
       Spring Context初始化流程：(https://blog.csdn.net/u010209217/article/details/80828067)
            AbstractAC.refresh()<---ClassPathXmlAC、SpringAC、WebAC
            1).prepareRefresh():对刷新进行准备，包括设置开始时间、激活状态、初始化Context环境中的占位符。这个动作根据子类需求由子类执行，然后
@@ -370,7 +371,13 @@
            12).finishRefresh():完成上下文的刷新工作，调用LifecycleProcessor的onFresh()方法以及发布ContextRefreshedEvent事件。
            13).resetCommonCaches():在finally中执行13步，重置公用的缓存，比较典型的如： ReflectionUtils, ResolvableType
             以及CachedIntrospectionResults的缓存
-            
+      Spring中的bean的生命周期： 
+           首先调用bean的构造方法创建bean，然后通过反射调用set方法进行属性的依赖注入。第三步，如果实现了BeanNameAware接口，会设置bean的name,
+        第四步，如果实现了BeanFactoryAware接口，会把beanFactory设置给bean。第五步，如果实现ApplicationContextAware接口，会给bean设置ApplicationContext。
+        第六步，如果实现了BeanPostProcessor接口，则执行前置的处理方法。第七步，实现了InitializingBean接口的话，会执行afterProPertiesSet()方法。
+        第八步，执行自定义的init()方法。第九步，执行BeanPostProcessor的后置方法。这时就完成了bean的创建工作。那么在使用完bean需要销毁的时候，会先
+        执行DisposableBean接口的destroy()方法，然后再执行自定义的destroy方法。
+      
       Spring应用
       常用注解：(https://www.jianshu.com/p/71e8971d2bc5?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)
            类型类：  +add PIC
