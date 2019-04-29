@@ -335,7 +335,7 @@
       AOP:  
           静态代理：在编译时进行织入，或者类加载时进行织入，比如aspectJ。
           动态代理：运行时增强，比如JDK代理
-      PlaceHolder动态替换：PropertyPlaceholderConfigurer/PropertySourcesPlaceholderConfigurer(https://blog.csdn.net/difffate/article/details/70186293)  
+      PlaceHolder动态替换：PropertyPlaceholderConfigurer/PropertySourcesPlaceholderConfigurer(https://www.cnblogs.com/leftthen/p/5615066.html)  
       事物：
           隔离级别：事物的隔离级别是由具体数据库实现的
           传播类型：PROPAGATION_REQUEST、PROPAGATION_SUPPORTS(https://blog.csdn.net/weixin_38070406/article/details/78157603)
@@ -406,20 +406,21 @@
           1)一级缓存：作用域是session、hashMap实现、默认开启
           2)二级缓存：作用域是Mapping(maneSpace)、支持ehcache等缓存实现、可配置剔除策略，刷新间隔，缓存数量等
       c.应用相关：
-          1)防止sql注入
-          2)获得自增Id
-          3)动态sql标签
+          1)防止sql注入:#{}
+          2)获得自增Id:keyProperty配置和selectKey两种方式实现
+          3)动态sql标签:<foreach><choose><if><selectKey>
       d.执行流程：
-      e.主要对象：
-          1)SqlSessionFactory
-          2)SqlSession
-          3)Executor
-          4)StatementHandler
-          5)ParamterHandler
-          6)ResultSetHandler
-          7)TypeHandler
+      e.主要对象：(https://www.cnblogs.com/jian0110/p/9452592.html)
+          1)SqlSessionFactory：用来创建SQLSession的工厂类，一个SqlSessionFactory对应一个数据库配置
+                    对数据库的操作必须在SqlSession中进行
+          2)SqlSession:非线程安全，每一次操作完成之后都要调用close()进行关闭
+          3)Executor:SqlSession通过内部的Executor进行增删改查操作。
+          4)StatementHandler：用来处理sql语句的预编译。   原生JDBC预编译，#占位符防止sql注入
+          5)ParamterHandler：用来设置预编译参数。
+          6)ResultSetHandler：用来处理结果集。
+          7)TypeHandler：进行数据库类型和java Bean类型的互相映射。
       f.插件机制：
-          1)拦截器链
+          1)拦截器链：
           2)作用点：Executor、StatementHandler、ParamterHandler、ResultSetHandler
           3)常见插件：mybatis-pagehelper
             
