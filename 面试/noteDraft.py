@@ -329,6 +329,8 @@
    
     Spring Boot+Cloud可以实现常见安全模型，比如单点登录、令牌中继、令牌交换等
     
+    SpringMVC工作原理详解：(https://mp.weixin.qq.com/s/_uPJiTdgd1sIlHvhBfcQcg)
+    
     详解：
     1）Spring IOC与AOP:Dependecy Injection/Inversion of Control(https://www.cnblogs.com/superjt/p/4275462.html)
       Java 反射：说的是在运行状态中，对于任何一个类，我们都能够知道这个类有哪些方法和属性。(https://baijiahao.baidu.com/s?id=1619748187138646880&wfr=spider&for=pc)
