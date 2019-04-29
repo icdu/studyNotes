@@ -398,6 +398,31 @@
     a.Hibernate：对数据库结构提供了完整的封装，实现了pojo对象与数据库表之间的映射，能自动生成和执行sql语句。
     b.Mybatis： 通过映射配置文件，将sql所需要的参数和返回结果映射到指定对象，mybatis不会自动生成sql，需要自己定义sql语句，自己实现sql优化。
     
+    Mybatis详解：
+      a.特点
+          1)优点：原生sql、sql语句与代码解耦、简单易学、sql调优灵活
+          2)缺点：半自动ORM、数据库移植性差
+      b.缓存：
+          1)一级缓存：作用域是session、hashMap实现、默认开启
+          2)二级缓存：作用域是Mapping(maneSpace)、支持ehcache等缓存实现、可配置剔除策略，刷新间隔，缓存数量等
+      c.应用相关：
+          1)防止sql注入
+          2)获得自增Id
+          3)动态sql标签
+      d.执行流程：
+      e.主要对象：
+          1)SqlSessionFactory
+          2)SqlSession
+          3)Executor
+          4)StatementHandler
+          5)ParamterHandler
+          6)ResultSetHandler
+          7)TypeHandler
+      f.插件机制：
+          1)拦截器链
+          2)作用点：Executor、StatementHandler、ParamterHandler、ResultSetHandler
+          3)常见插件：mybatis-pagehelper
+            
   4.Netty：是一个高性能的异步事件驱动的网络框架，对JDK原生的ORO进行封装，简化了网络服务的开发。
   5.RPC(https://www.jianshu.com/p/5b90a4e70783)
     RPC是Remote Procedure Call即远程过程调用。像调用本地方法一样调用远程过程。
