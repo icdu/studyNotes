@@ -11,6 +11,8 @@
     awk、top、netstat、grep、less、tail(https://www.cnblogs.com/ginvip/p/6352157.html)
     
   3.拓展知识点：
+  
+  
     内存屏障、指令乱码、分支预测、CPU亲和性(affinity)、Netfilter与iptables
     
   4.网络知识：
@@ -398,7 +400,9 @@
     
   4.Netty：是一个高性能的异步事件驱动的网络框架，对JDK原生的ORO进行封装，简化了网络服务的开发。
   5.RPC(https://www.jianshu.com/p/5b90a4e70783)
-    a.Motan
+    RPC是Remote Procedure Call即远程过程调用。像调用本地方法一样调用远程过程。
+    
+    a.Motan   +add Pic
     b.Dubbo
     c.Grpc  
   6.其他框架
