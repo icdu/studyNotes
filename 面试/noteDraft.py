@@ -338,7 +338,7 @@
           静态代理：在编译时进行织入，或者类加载时进行织入，比如aspectJ。
           动态代理：运行时增强，比如JDK代理
       PlaceHolder动态替换：PropertyPlaceholderConfigurer/PropertySourcesPlaceholderConfigurer(https://www.cnblogs.com/leftthen/p/5615066.html)  
-      事物：
+      事物：(https://mp.weixin.qq.com/s/5KUo4CpizFZsirsInSn5Jw)
           隔离级别：事物的隔离级别是由具体数据库实现的
           传播类型：PROPAGATION_REQUEST、PROPAGATION_SUPPORTS(https://blog.csdn.net/weixin_38070406/article/details/78157603)
       核心借口/类：
