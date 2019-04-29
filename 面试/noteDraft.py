@@ -123,7 +123,7 @@
       可见性：synchronized、volatile
       有序性：volatile、happens-before原则
     
-  2.类加载：
+  2.类加载：(https://mp.weixin.qq.com/s/CrLdjROqKSe3iv-YZ751Ug)
     a.概念：类加载器把class文件中的二进制数据读入到内存中，存放在方法区，然后在堆区创建一个java.lang.Class对象，用来封装类在方法区内的数据结构。
       加载-》连接-》初始化-》使用-》卸载
              ||
