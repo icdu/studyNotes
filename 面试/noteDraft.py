@@ -104,7 +104,7 @@
       注解处理机制:
  
 三、深入浅出JVM  (https://segmentfault.com/a/1190000014395186)(https://blog.csdn.net/qq_41701956/article/details/81664921)
-  1.内存模型:运行时的数据区(作用和保存哪些数据)  HotSpot
+  1.内存模型:运行时的数据区(作用和保存哪些数据)  HotSpot  (https://www.cnblogs.com/qingshanli/p/9256387.html)
     a.程序计数器(Program Counter Register):指向当前线程正在执行的字节码指令。
       线程私有   
     b.方法区(Method Area):用于存储已被虚拟机加载的类信息、常量、静态变量、即时编译后的代码等数据。
