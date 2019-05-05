@@ -500,7 +500,7 @@
       master选举:
     f:key失效机制
       主动删除：
-      被动善春：
+      被动删除：
     g:淘汰策略
       voltile-lru:                  
       voltile-all:                 
