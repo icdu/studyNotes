@@ -58,7 +58,7 @@
       
     b.常用集合：掌握集合类如何实现(https://www.cnblogs.com/skywang12345/p/3323085.html)
       HashMap：散列表(非线程安全)(https://www.cnblogs.com/chengxiao/p/6059914.html)(https://segmentfault.com/a/1190000012926722)
-        数组加链表的实现方式
+        数组加链表的实现方式(http://www.importnew.com/31278.html)
         容量大小是2的幂次方的原因、并发读写会有什么风险
         --Map的实现能够考察到数据结构，Java基础实现，以及对并发问题处理思路的掌握程度
         Java的HashMap就是数组加链表实现的，数组中的每一项是一个链表，通过计算存入对象的HashCode来计算对象在数组中要存入的位置，用链表来解决散列冲突，
