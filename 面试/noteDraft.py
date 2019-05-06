@@ -49,7 +49,8 @@
     
   2.java语言特性
     a.数据类型：byte(1字节)、short(2字节)、int(4字节)、long(8字节)、char(2字节[C语言中是1字节]可以存储一个汉字) 
-               float(4字节)、double(8字节)、boolean(false/true[理论上占用1bit,1/8字节，实际处理按1byte处理])                     
+               float(4字节)、double(8字节)、boolean(false/true[理论上占用1bit,1/8字节，实际处理按1byte处理])  
+          (https://www.cnblogs.com/123hll/p/5805040.html)(https://blog.csdn.net/hezh1994/article/details/78899683)
       空间占用：
       基本数据结构：
       自动转型和强制转型：
