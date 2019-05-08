@@ -333,7 +333,7 @@
     SpringMVC工作原理详解：(https://mp.weixin.qq.com/s/_uPJiTdgd1sIlHvhBfcQcg)
     
     详解：
-    1）Spring IOC与AOP:Dependecy Injection/Inversion of Control(https://www.cnblogs.com/xdp-gacl/p/4249939.html)(https://www.jianshu.com/p/d41c596316c1)(https://www.cnblogs.com/superjt/p/4275462.html)
+    1）Spring IOC与AOP:Dependecy Injection/Inversion of Control(https://www.cnblogs.com/xdp-gacl/p/4249939.html)(https://www.jianshu.com/p/d41c596316c1)(https://mp.weixin.qq.com/s?__biz=MzIwMTY0NDU3Nw==&mid=2651935547&idx=1&sn=33bd00482936e35b5915be4e1c8cfe55&chksm=8d0f3c75ba78b563560c54283557004770d301f071c808651aaa716bdf62f3d0a14c4873c3b6&scene=21#wechat_redirect)(https://www.cnblogs.com/superjt/p/4275462.html)
       Java 反射：说的是在运行状态中，对于任何一个类，我们都能够知道这个类有哪些方法和属性。(https://baijiahao.baidu.com/s?id=1619748187138646880&wfr=spider&for=pc)
       AOP:  
           静态代理：在编译时进行织入，或者类加载时进行织入，比如aspectJ。
