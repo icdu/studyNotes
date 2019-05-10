@@ -277,7 +277,7 @@
     c.哈夫曼树
     d.堆
 
-  算法：
+  算法：(https://blog.csdn.net/hguisu/article/details/7776068/)
   1.常见算法思路：
     a.分治
     b.动态规划
