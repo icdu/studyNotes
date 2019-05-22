@@ -135,7 +135,7 @@
       System类加载器:系统/应用加载   java - classpath
       自定义类加载器:Custom ClassLoader
   
-  3.GC   (https://baijiahao.baidu.com/s?id=1605937053950156833&wfr=spider&for=pc)
+  3.GC   (https://baijiahao.baidu.com/s?id=1605937053950156833&wfr=spider&for=pc)(http://www.importnew.com/22336.html)
     a.分代回收:
       年轻代: Eden + Survivor1 + Survivor2
       老年代: Tenured
