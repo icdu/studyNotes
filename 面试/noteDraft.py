@@ -26,7 +26,7 @@
       Nagel算法与ACK延迟：产生的背景，解决小包问题提高数据再核比；延迟比较敏感且发送数据频率比较低的情况，可以关闭Nagel算法
       Keepalive：长时间没有数据发送到场景下，TCP保持链接可用的机制。知道开启和设置方式
       滑动窗口与流量控制：如何通过滑动窗口机制进行流量控制的
-    c.HTTP协议
+    c.HTTP协议(https://www.cnblogs.com/frankyou/p/6145485.html)
       协议：Method、Header、Cookies
       UmEncode
       状态码：200(请求成功)、301(资源/网页等被永久转移到其它URL)、404(请求的资源/网页等不存在)、500(内部服务器错误)
