@@ -173,7 +173,7 @@
             每次只使用Eden和其中一块Survivor空间，然后垃圾回收的时候，把存活对象放到未使用的Survivor（划分出from、to）空间中，清空Eden和刚才使用过的Survivor空间。
         （2）由于老年代每次只回收少量的对象，因此采用mark-compact算法。
         （3）在堆区外有一个永久代。对永久代的回收主要是无效的类和常量
-  4.性能调优
+  4.性能调优(https://blog.csdn.net/u011683530/article/details/51013219)
     a.JVM参数:
     b.性能分析工具
       MAT:
