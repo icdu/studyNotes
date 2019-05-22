@@ -64,7 +64,7 @@
         Java的HashMap就是数组加链表实现的，数组中的每一项是一个链表，通过计算存入对象的HashCode来计算对象在数组中要存入的位置，用链表来解决散列冲突，
         链表中的节点存储的是键值对。除了实现的方式，我们还要知道填充因子的作用，与扩容是的rehash机制，需要知道map容量大小是2的幂次方的原因，因为通过
         按位与操作来计算余数，比求模要快。另外HashMap是非线程安全的，在多线程put的情况下，有可能在容量超过填充因子时，进行rehash，因为HashMap为了
-        避免尾部遍历，在链表的插入时使用的是头插法，多线程场景下可能会产生死循环。
+        避免尾部遍历，在链表的插入时使用的是头插法，多线程场景下可能会产生死循环。(https://blog.csdn.net/tengshe789/article/details/81459845)
         rehash:(https://www.jianshu.com/p/13c650a25ed3)
       ConcurrentHashMap：(线程安全)(https://www.cnblogs.com/chengxiao/p/6842045.html)
         并发控制与分段锁思想:降低并发场景下锁定发生频率，1.7和1.8中实现方式比较大
