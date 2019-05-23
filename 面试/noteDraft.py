@@ -36,7 +36,7 @@
     e.QUIC(HTTP3):基于UDP，但是提供了类似TCP的可靠性保障和流量控制；
       避免前序包阻塞(HQL阻塞)、零RTT链接、FEC前向纠错
       
-二、Java语言特性和设计模式
+二、Java语言特性和设计模式(https://www.oschina.net/translate/how-i-explained-ood-to-my-wife?lang=chs&p=2)(https://blog.csdn.net/x2145637/article/details/52451619)
   1.设计模式：在什么场景下是用什么模式(https://www.cnblogs.com/geek6/p/3951677.html)(https://www.jianshu.com/p/77fcd3e8f9f7)
     单例模式：1.静态初始化(饿汉式)2.双重检查(懒汉式)3.单例注册表
     工厂模式：Spring如何创建Bean
