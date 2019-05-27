@@ -20,11 +20,11 @@
       OSI七层网络模型：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层
       TCP/IP四层网络模型：网络接口层、网间层、传输层、应用层
     b.TCP协议:基于连接(点对点)、双工通信、可靠传输、阻塞控制、基于字节流而非报文
-      △三次握手建连、四次握手断连：(https://www.cnblogs.com/cy568searchx/p/4211124.html)三次握手为了建立双向链接、
+      △三次握手建连、四次握手断连：(https://www.cnblogs.com/cy568searchx/p/4211124.html)三次握手为了建立双向连接、
             洪水攻击(SYN_RCVD):设置linux的TCP参数retry=0，或者加大back
-      报文状态标志与链接状态:
+      报文状态标志与连接状态:
       Nagel算法与ACK延迟：产生的背景，解决小包问题提高数据再核比；延迟比较敏感且发送数据频率比较低的情况，可以关闭Nagel算法
-      Keepalive：长时间没有数据发送到场景下，TCP保持链接可用的机制。知道开启和设置方式
+      Keepalive：长时间没有数据发送到场景下，TCP保持连接可用的机制。知道开启和设置方式
       滑动窗口与流量控制：如何通过滑动窗口机制进行流量控制的
     c.HTTP协议(https://www.cnblogs.com/frankyou/p/6145485.html)
       协议：Method、Header、Cookies
